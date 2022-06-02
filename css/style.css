@@ -125,14 +125,28 @@ body {
 .header-tel:focus {
 	color: var(--accent-color);
 }
-
+.header-mail-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
+.header-tel-icon {
+	fill: currentColor;
+	margin-right: 10px;
+}
 /* ------------HERO------------------ */
 .hero {
 	background-color: #2f303a;
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/Hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
-
 .hero-text {
 	font-weight: 900;
 	font-size: 44px;
@@ -196,6 +210,15 @@ body {
 	color: var(--paragraf-txt-color);
 	margin-bottom: 18px;
 	width: 270px;
+}
+.team-benefits-link {
+	width: 270px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f4fa;
+	margin-bottom: 30px;
 }
 /* ------------------MAIN--ABOUT------------- */
 
@@ -263,6 +286,63 @@ body {
 	color: var(--paragraf-txt-color);
 	display: flex;
 	justify-content: center;
+	margin-bottom: 16px;
+}
+.team-sotial-list {
+	display: flex;
+	justify-content: center;
+}
+.team-sotial-li {
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+}
+.team-sotial-li:last-child {
+	margin: 0;
+}
+.team-sotial-link {
+	width: 100%;
+	height: 100%;
+	background-color: var(--white-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #afb1b8;
+}
+.team-sotial-icon {
+	fill: currentColor;
+}
+.team-sotial-link:hover,
+.team-sotial-link:focus {
+	background-color: var(--accent-color);
+	color: var(--white-color);
+}
+.section-client {
+	background-color: var(--white-color);
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.client-text {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	color: var(--main-txt-color);
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+.client-list {
+	display: flex;
+	justify-content: space-around;
+}
+.team-client-icon {
+	display: block;
+	height: 170px;
+	width: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
 }
 
 /* -----------PORTFOLIO------------ */
