@@ -141,9 +141,13 @@ body {
 			rgba(47, 48, 58, 0.4)
 		),
 		url(../images/Hero-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+    height: 600px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -241,6 +245,9 @@ body {
 	margin-right: 30px;
 }
 /* ------------------MAIN--ABOUT------------- */
+.team {
+	background-color: #f5f4fa;
+}
 .team-li {
 	background-color: var(--white-color);
 }
@@ -335,16 +342,41 @@ body {
 }
 .client-list {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-right: 10px;
 }
-.team-client-icon {
+.client-li {
 	display: block;
-	height: 170px;
-	width: 92px;
+
+	width: 170px;
+	height: 92px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 }
-
+.client-list :not(:last-child) {
+	margin-right: 10px;
+}
+.client-link {
+	height: 100%;
+	width: 100%;
+	padding: 16px 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #afb1b8;
+}
+.client-li:hover,
+.client-li:focus,
+.client-link:hover,
+.client-link:focus {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+.client-icon {
+	fill: currentColor;
+	height: 106px;
+	width: 60px;
+}
 /* -----------PORTFOLIO------------ */
 .section-work {
 	background-color: var(--white-color);
@@ -421,6 +453,16 @@ body {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
+.footer-div {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-adres {
+	box-sizing: border-box;
+	margin-right: 70px;
+}
 .footer-logo-web {
 	color: var(--accent-color);
 }
@@ -458,4 +500,45 @@ body {
 .footer-mail:hover,
 .footer-tel:focus {
 	color: var(--accent-color);
+}
+.conect {
+	box-sizing: border-box;
+}
+.conect-text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: var(--white-color);
+	margin-bottom: 20px;
+}
+.conect-list {
+	display: flex;
+	justify-content: center;
+}
+.conect-li {
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+}
+.conect-li:last-child {
+	margin: 0;
+}
+.conect-sotial-link {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-color);
+}
+.conect-sotial-icon {
+	fill: currentColor;
+}
+.conect-sotial-link:hover,
+.conect-sotial-link:focus {
+	background-color: var(--accent-color);
+	color: var(--white-color);
 }
