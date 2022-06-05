@@ -118,6 +118,7 @@ body {
 	color: var(--paragraf-txt-color);
 	display: block;
 	padding: 32px 0;
+	display: flex;
 }
 .header-tel:hover,
 .header-tel:focus,
@@ -141,13 +142,13 @@ body {
 			rgba(47, 48, 58, 0.4)
 		),
 		url(../images/Hero-bg.jpg);
-    height: 600px;
-    max-width: 1600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-right: auto;
-    margin-left: auto;
+	height: 600px;
+	max-width: 1600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -192,12 +193,12 @@ body {
 	cursor: pointer;
 }
 /* ------------------MAIN--BENEFITS------------- */
-
+.benefits {
+	padding-bottom: 0;
+}
 .benefits-list {
 	display: flex;
-}
-.benefits-list :not(:last-child) {
-	margin-right: 30px;
+	justify-content: space-between;
 }
 .benefits-pre-text {
 	font-weight: 700;
@@ -343,7 +344,6 @@ body {
 .client-list {
 	display: flex;
 	justify-content: space-between;
-	margin-right: 10px;
 }
 .client-li {
 	display: block;
@@ -353,13 +353,9 @@ body {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 }
-.client-list :not(:last-child) {
-	margin-right: 10px;
-}
 .client-link {
 	height: 100%;
 	width: 100%;
-	padding: 16px 32px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -374,8 +370,8 @@ body {
 }
 .client-icon {
 	fill: currentColor;
-	height: 106px;
-	width: 60px;
+	height: 60px;
+	width: 106px;
 }
 /* -----------PORTFOLIO------------ */
 .section-work {
@@ -419,6 +415,13 @@ body {
 	width: calc((100% / 3) - 30px);
 	margin-right: 30px;
 	margin-bottom: 30px;
+	/* border: 1px solid #eeeeee; */
+}
+.work-li:hover,
+.work-li:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-li :not(:nth-child(3)) {
 	margin-right: 0;
@@ -429,7 +432,6 @@ body {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-txt-color);
-	padding-top: 20px;
 	margin-bottom: 4px;
 }
 .work-text {
