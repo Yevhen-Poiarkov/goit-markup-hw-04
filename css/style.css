@@ -408,6 +408,8 @@ body {
 .work-list {
 	display: flex;
 	flex-wrap: wrap;
+	margin-right: -30px;
+	margin-bottom: -30px;
 }
 .work-li {
 	background-color: var(--white-color);
@@ -415,7 +417,6 @@ body {
 	width: calc((100% / 3) - 30px);
 	margin-right: 30px;
 	margin-bottom: 30px;
-	/* border: 1px solid #eeeeee; */
 }
 .work-li:hover,
 .work-li:focus {
